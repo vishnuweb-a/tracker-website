@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "aiconfig-tools": {
+      "source": "launchdarkly/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/agentcontrol/aiconfig-tools/SKILL.md",
+      "computedHash": "fd0af5b34d803899542c7c8428450cc3dbd6638835bcc5712d409eb447dcb7b1"
+    },
+    "playwright-best-practices": {
+      "source": "currents-dev/playwright-best-practices-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "996c8cafaa0b6bcb1a6de785a63fb4a3dfe794f17584ff82daedec9e3eaacad3"
+    }
+  }
+}

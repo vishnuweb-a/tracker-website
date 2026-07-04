@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySprint | The Ultimate Offline Study Sprint Tracker</title>
+    <meta name="description" content="Track your daily study progress, manage sprint-based goals, analyze performance, and stay consistent — completely offline. Built with Flutter.">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ChatGPT%20Image%20Jul%204,%202026,%2007_43_14%20PM.png">
+</head>
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <img src="assets/ChatGPT Image Jul 4, 2026, 07_43_14 PM.png" alt="StudySprint Logo">
+                <span>StudySprint</span>
+            </a>
+            
+            <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="./app-release.apk" class="nav-cta">Download App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        
+        <div class="container">
+            <div class="hero-content reveal-left">
+                <div class="hero-badge">
+                    <span>🚀</span> Offline First Flutter App
+                </div>
+                
+                <h1>Study <span class="highlight">Smarter.</span><br>Stay Consistent.</h1>
+                
+                <p class="hero-desc">
+                    Track study sessions, build productive habits, analyze progress, and prepare confidently for competitive exams — all completely offline.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">
+                        <i class="ph-duotone ph-download-simple"></i>
+                        Get Started Free
+                    </a>
+                    <a href="https://github.com/vishnuweb-a" target="_blank" class="btn-secondary">
+                        <i class="ph-duotone ph-github-logo"></i>
+                        View GitHub
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-icon">
+                            <i class="ph-duotone ph-check-circle" style="color: var(--success)"></i>
+                        </div>
+                        <div class="hero-stat-text">
+                            <strong><span class="counter" data-target="9">0</span> Modules</strong>
+                            <small>Feature Complete</small>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-icon">
+                            <i class="ph-duotone ph-database" style="color: var(--study-yellow)"></i>
+                        </div>
+                        <div class="hero-stat-text">
+                            <strong>100% Offline</strong>
+                            <small>SQLite Powered</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal-right">
+                <div class="float-card float-card-1">
+                    <div class="float-card-icon green"><i class="ph-duotone ph-check"></i></div>
+                    <div class="float-card-text">
+                        <strong>Habit Completed</strong>
+                        <small>Just now</small>
+                    </div>
+                </div>
+                
+                <div class="float-card float-card-2">
+                    <div class="float-card-icon blue"><i class="ph-duotone ph-timer"></i></div>
+                    <div class="float-card-text">
+                        <strong>4h 30m</strong>
+                        <small>Study Time Today</small>
+                    </div>
+                </div>
+                
+                <div class="float-card float-card-3">
+                    <div class="float-card-icon yellow"><i class="ph-duotone ph-flag-banner"></i></div>
+                    <div class="float-card-text">
+                        <strong>Sprint 12</strong>
+                        <small>Active Sprint</small>
+                    </div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="assets/pic-01.jpeg" alt="StudySprint Dashboard Preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. TRUSTED BY -->
+    <section class="trusted reveal">
+        <div class="container">
+            <h3 class="trusted-label">Built for students preparing for</h3>
+            <div class="trusted-badges">
+                <div class="trusted-badge">JEE</div>
+                <div class="trusted-badge">NEET</div>
+                <div class="trusted-badge">UPSC</div>
+                <div class="trusted-badge">CAT</div>
+                <div class="trusted-badge">GATE</div>
+                <div class="trusted-badge">SSC</div>
+                <div class="trusted-badge">Bank Exams</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. STORY / PROBLEM -->
+    <section class="section story reveal">
+        <div class="container">
+            <div class="story-inner">
+                <span class="story-emoji">😓</span>
+                <h2>Every student struggles with <span class="story-highlight">consistency</span>.</h2>
+                <p>
+                    Competitive exams require months, sometimes years, of relentless effort. But keeping track of what you've studied, maintaining healthy habits, and analyzing where you're lacking is exhausting.
+                </p>
+                <p>
+                    Most students just log hours, but hours don't tell the full story. You need a structured approach.
+                </p>
+                
+                <div class="story-solution reveal">
+                    <h3>Enter StudySprint 🎯</h3>
+                    <p>Instead of just tracking time, we help you build structured study sprints, monitor daily targets, and analyze your long-term performance without relying on the internet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURES -->
+    <section id="features" class="section reveal">
+        <div class="container">
+            <h2 class="section-heading">Everything You Need To Stay Consistent</h2>
+            <p class="section-sub">A comprehensive suite of tools designed specifically for the serious student.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card reveal" style="transition-delay: 100ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-flag-checkered"></i></div>
+                    <h3>Sprint Management</h3>
+                    <p>Create custom study sprints, manage active workflows, and review your historical sprint progress seamlessly.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 150ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-books"></i></div>
+                    <h3>Subject Tracker</h3>
+                    <p>Add unlimited subjects, set daily targets, assign custom colors and icons, and reorder them with drag & drop.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 200ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-plant"></i></div>
+                    <h3>Habit Tracker</h3>
+                    <p>Build routines with Checkbox, Numeric, or Time-based habits to ensure you hit your daily goals like mock tests or PYQs.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 250ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-chart-bar"></i></div>
+                    <h3>Analytics</h3>
+                    <p>Beautiful visual reports of daily progress, weekly trends, subject comparisons, and habit completion rates.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 300ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-clock-counter-clockwise"></i></div>
+                    <h3>History</h3>
+                    <p>Review completed sprints, analyze daily records, and compare historical performance to see how far you've come.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 350ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-squares-four"></i></div>
+                    <h3>Dashboard</h3>
+                    <p>View everything at a glance: current sprint, today's questions, study time, weekly streak, and quick action buttons.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 400ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-gear"></i></div>
+                    <h3>Settings</h3>
+                    <p>Customize your experience with Light, Dark, or System themes. Easily export and import your study data anytime.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 450ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-wifi-slash"></i></div>
+                    <h3>Offline Database</h3>
+                    <p>Your data stays with you. 100% offline-first architecture using a robust local SQLite database ensures privacy and speed.</p>
+                </div>
+                
+                <div class="feature-card reveal" style="transition-delay: 500ms;">
+                    <div class="feature-icon"><i class="ph-duotone ph-trend-up"></i></div>
+                    <h3>Performance Tracking</h3>
+                    <p>Automatic calculations for total questions solved, study duration, completion percentage, and daily progress scores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. APP PREVIEW -->
+    <section class="section section-alt preview reveal">
+        <div class="container preview-layout">
+            <div class="preview-phone reveal-left">
+                <div class="preview-mockup">
+                    <div class="preview-screen" id="previewScreen">
+                        <img src="assets/pic-01.jpeg" alt="Dashboard" class="active" data-index="0">
+                        <img src="assets/pic-02.jpeg" alt="Tracker" data-index="1">
+                        <img src="assets/pic-03.jpeg" alt="Analytics" data-index="2">
+                        <img src="assets/pic-04.jpeg" alt="History" data-index="3">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview-info reveal-right">
+                <h2>A beautiful, focused interface.</h2>
+                <p>We designed StudySprint to get out of your way. Navigate smoothly between tracking, analytics, and history without any friction or distractions.</p>
+                
+                <div class="preview-tabs" id="previewTabs">
+                    <button class="preview-tab active" data-index="0">Dashboard</button>
+                    <button class="preview-tab" data-index="1">Daily Tracker</button>
+                    <button class="preview-tab" data-index="2">Analytics</button>
+                    <button class="preview-tab" data-index="3">History</button>
+                </div>
+                
+                <div class="preview-features">
+                    <div class="preview-feature">
+                        <div class="preview-feature-icon"><i class="ph-duotone ph-rocket-launch"></i></div>
+                        <span>Start sprints instantly from the dashboard</span>
+                    </div>
+                    <div class="preview-feature">
+                        <div class="preview-feature-icon"><i class="ph-duotone ph-pencil-simple"></i></div>
+                        <span>Log questions, study time, and notes seamlessly</span>
+                    </div>
+                    <div class="preview-feature">
+                        <div class="preview-feature-icon"><i class="ph-duotone ph-chart-line-up"></i></div>
+                        <span>Gain deep insights into your study patterns</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. HOW IT WORKS / TIMELINE -->
+    <section id="how-it-works" class="section reveal">
+        <div class="container">
+            <h2 class="section-heading">The StudySprint Methodology</h2>
+            <p class="section-sub">A proven cycle to build consistency and achieve your exam goals.</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-item reveal" style="transition-delay: 100ms;">
+                    <div class="timeline-dot"><i class="ph-duotone ph-flag-banner"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-step">Step 01</div>
+                        <h3>Create a Sprint</h3>
+                        <p>Define a focused period (e.g., 7 days, 14 days) to tackle specific chapters or subjects without burning out.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal" style="transition-delay: 200ms;">
+                    <div class="timeline-dot"><i class="ph-duotone ph-pencil-simple-line"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-step">Step 02</div>
+                        <h3>Log Daily Entries</h3>
+                        <p>Every day, log your study time, revision time, questions solved per subject, and brief daily notes.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal" style="transition-delay: 300ms;">
+                    <div class="timeline-dot"><i class="ph-duotone ph-plant"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-step">Step 03</div>
+                        <h3>Build Habits</h3>
+                        <p>Check off your daily habits like solving PYQs, revising formulas, or completing lectures to maintain momentum.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal" style="transition-delay: 400ms;">
+                    <div class="timeline-dot"><i class="ph-duotone ph-chart-polar"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-step">Step 04</div>
+                        <h3>Analyze Progress</h3>
+                        <p>Review the visual analytics dashboard to see your performance score, weekly trends, and identify weak spots.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal" style="transition-delay: 500ms;">
+                    <div class="timeline-dot"><i class="ph-duotone ph-check-circle"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-step">Step 05</div>
+                        <h3>Complete & Repeat</h3>
+                        <p>Finish the sprint, review the historical summary, and start a new sprint armed with better insights about yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. HABIT TYPES -->
+    <section class="section section-alt reveal">
+        <div class="container">
+            <h2 class="section-heading">Powerful Habit Tracking</h2>
+            <p class="section-sub">Not all study tasks are the same. We provide three distinct habit types to track exactly what matters.</p>
+            
+            <div class="habits-grid">
+                <div class="habit-card reveal" style="transition-delay: 100ms;">
+                    <div class="habit-icon"><i class="ph-duotone ph-check-square-offset"></i></div>
+                    <h3>Checkbox Habits</h3>
+                    <p>Simple yes/no habits for daily routines. Perfect for one-off tasks you need to remember.</p>
+                    <div class="habit-examples">
+                        <div class="habit-example"><i class="ph-duotone ph-check-circle" style="color: var(--success)"></i> Notes Revision</div>
+                        <div class="habit-example"><i class="ph-duotone ph-check-circle" style="color: var(--success)"></i> Formula Reading</div>
+                    </div>
+                </div>
+                
+                <div class="habit-card reveal" style="transition-delay: 200ms;">
+                    <div class="habit-icon"><i class="ph-duotone ph-hash"></i></div>
+                    <h3>Numeric Habits</h3>
+                    <p>Target-based tracking for quantifiable study goals. Track how much you accomplish.</p>
+                    <div class="habit-examples">
+                        <div class="habit-example">🔢 50 PYQs Solved</div>
+                        <div class="habit-example">🔢 2 Mock Tests</div>
+                    </div>
+                </div>
+                
+                <div class="habit-card reveal" style="transition-delay: 300ms;">
+                    <div class="habit-icon"><i class="ph-duotone ph-timer"></i></div>
+                    <h3>Time-Based Habits</h3>
+                    <p>Duration tracking for activities that require dedicated, uninterrupted focus blocks.</p>
+                    <div class="habit-examples">
+                        <div class="habit-example">⏱ 2h Concept Practice</div>
+                        <div class="habit-example">⏱ 1h Lecture Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TECH STACK -->
+    <section class="section reveal">
+        <div class="container">
+            <h2 class="section-heading">Built with Modern Tech</h2>
+            <p class="section-sub">A robust, offline-first architecture prioritizing performance, reliability, and maintainability.</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-device-mobile"></i></div>
+                    <h4>Flutter</h4>
+                    <p>Cross-platform framework</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-cube"></i></div>
+                    <h4>Riverpod</h4>
+                    <p>Reactive state management</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-database"></i></div>
+                    <h4>SQLite</h4>
+                    <p>Fast, local database engine</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-hard-drives"></i></div>
+                    <h4>Drift</h4>
+                    <p>Type-safe database ORM</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-signpost"></i></div>
+                    <h4>GoRouter</h4>
+                    <p>Declarative routing</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-archive-box"></i></div>
+                    <h4>Shared Prefs</h4>
+                    <p>Local key-value storage</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-palette"></i></div>
+                    <h4>Material 3</h4>
+                    <p>Modern Google design system</p>
+                </div>
+                <div class="tech-card reveal">
+                    <div class="tech-icon"><i class="ph-duotone ph-layers-intersect"></i></div>
+                    <h4>Clean Arch</h4>
+                    <p>Feature First + SOLID principles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. DOWNLOAD CTA -->
+    <section id="download" class="section download-cta reveal">
+        <div class="container download-inner">
+            <h2>Ready to transform your study routine?</h2>
+            <p>Download the free, ad-free APK today and take control of your competitive exam preparation offline.</p>
+            
+            <div class="download-buttons">
+                <a href="./app-release.apk" class="download-btn-android">
+                    <i class="ph-duotone ph-android-logo"></i>
+                    Download APK
+                </a>
+                <div class="download-btn-ios">
+                    <span class="coming-soon-tag">Coming Soon</span>
+                    <i class="ph-duotone ph-apple-logo"></i>
+                    Download for iOS
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. ROADMAP -->
+    <section id="roadmap" class="section reveal">
+        <div class="container">
+            <h2 class="section-heading">Future Roadmap</h2>
+            <p class="section-sub">We're constantly improving. Here's what we are building next for the community.</p>
+            
+            <div class="roadmap-grid">
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-icon"><i class="ph-duotone ph-cloud-arrow-up"></i></div>
+                    <h4>Cloud Backup</h4>
+                    <p>Google Drive integration</p>
+                    <div class="roadmap-status">In Progress</div>
+                </div>
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-icon"><i class="ph-duotone ph-brain"></i></div>
+                    <h4>AI Insights</h4>
+                    <p>Performance recommendations</p>
+                    <div class="roadmap-status">Planned</div>
+                </div>
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-icon"><i class="ph-duotone ph-bell-ringing"></i></div>
+                    <h4>Notifications</h4>
+                    <p>Study session reminders</p>
+                    <div class="roadmap-status">Planned</div>
+                </div>
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-icon"><i class="ph-duotone ph-file-pdf"></i></div>
+                    <h4>Data Export</h4>
+                    <p>CSV & PDF Analytics reports</p>
+                    <div class="roadmap-status">Planned</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. OPEN SOURCE -->
+    <section class="section opensource reveal">
+        <div class="container">
+            <h2>Love Flutter?</h2>
+            <p>StudySprint is an open-source project. We welcome contributions, bug reports, and feature requests from developers worldwide.</p>
+            <div class="opensource-buttons">
+                <a href="https://github.com/vishnuweb-a" target="_blank" class="btn-primary">
+                    <i class="ph-duotone ph-github-logo"></i>
+                    View Repository
+                </a>
+                <a href="https://github.com/vishnuweb-a" target="_blank" class="btn-secondary">
+                    <i class="ph-duotone ph-star"></i>
+                    Star on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/ChatGPT Image Jul 4, 2026, 07_43_14 PM.png" alt="StudySprint Logo">
+                        <span>StudySprint</span>
+                    </a>
+                    <p>The offline-first Flutter application designed to help students track study sessions, build productive habits, and analyze their performance.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#analytics">Analytics</a>
+                    <a href="#roadmap">Roadmap</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/vishnuweb-a">GitHub Repo</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Report a Bug</a>
+                    <a href="#">Release Notes</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Developer</h4>
+                    <a href="https://github.com/vishnuweb-a" target="_blank">Vishnu Bhardwaj</a>
+                    <a href="vishnu-bhardwaj.vercel.app" target="_blank">Portfolio</a>
+                    <a href="https://www.linkedin.com/in/vishnu-bhardwaj-81006b382?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudySprint. Built with ❤️ using Flutter. < ! --- VISHNU BHARDWAJ ---  !>.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/vishnuweb-a" class="footer-social" aria-label="GitHub"><i class="ph-duotone ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/vishnu-bhardwaj-81006b382?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="footer-social" aria-label="LinkedIn"><i class="ph-duotone ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
